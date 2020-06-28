@@ -1,24 +1,13 @@
-# gohistory
+# 去哪网简单demo
 
-## Project setup
-```
-npm install
-```
+## 项目目标
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+1、简单的页面布局
 
-### Compiles and minifies for production
-```
-npm run build
-```
+2、对vue的常见指令应用
 
-### Lints and fixes files
-```
-npm run lint
-```
+3、利用vuerouter/vuex在项目中简单实现，路由配置和状态管理
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+4、利用vue-awesome-swiper实现引入外部插件
+
+！[view](view.jpg)
