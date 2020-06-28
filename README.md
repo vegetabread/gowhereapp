@@ -11,3 +11,5 @@
 4、利用vue-awesome-swiper实现引入外部插件
 
 ![Image text](https://raw.githubusercontent.com/vegetabread/gowhereapp/master/img/1.png)
+
+测试指令
