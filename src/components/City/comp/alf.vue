@@ -1,7 +1,8 @@
 <template>
     <div class="alf">
         <ul>
-            <li class="item" v-for="(item,key,index) in cities" @click="handle"
+            <li class="item" v-for="(item,key,index) in cities"
+            @click="handle" @touchstart="handletouchs" @touchmove="handletouchm" @touchend="handletouche"
             :key='index'>{{key}}</li>
         </ul>
     </div>
@@ -10,8 +11,33 @@
 export default {
   props: ['cities'],
   methods: {
+    data () {
+      return {
+        touchStatus: false
+      }
+    },
+    computed: {
+      letters () {
+        const letters = []
+        for (let i in this.cities) {
+          letters.push(i)
+        }
+        return letters
+      }
+    },
     handle (e) {
       this.$emit('change', e.target.innerText)
+    },
+    handletouchs () {
+      this.touchStatus = true
+    },
+    handletouchm () {
+      if (this.touchStatus) {
+
+      }
+    },
+    handletouche () {
+      this.touchStatus = false
     }
   }
 }

@@ -1,13 +1,15 @@
 <template>
-    <div class="title">
-        <span>周末去哪</span>
+    <div >
+        <div class="title">周末去哪</div>
         <ul>
-            <li class="item border-bottom" v-for="item in weekendList" :key="item.id">
+            <li v-for="item in weekendList" :key="item.id">
                     <div class="item-img-w">
                          <img :src="item.imgUrl" alt="" class="item-img">
                     </div>
-                    <p class="one">{{item.title}}</p>
-                    <p class="two">{{item.desc}}</p>
+                    <div class="main">
+                        <p class="one">{{item.title}}</p>
+                        <p class="two">{{item.desc}}</p>
+                    </div>
             </li>
         </ul>
     </div>
@@ -24,19 +26,18 @@ export default {
     line-height :.8rem
     background-color:#eee
     text-indent :.2rem
-    .item
-        background:#fff
-        .item-img-w
-            overflow:hidden
-            height : 0
-            padding-bottom:30.9%
-            .item-img
-                width:100%
-                text-indent: 0rem
-        .one
-            line-height :.54rem
-            font-size:.32rem
-        .two
-            line-height :.4rem
-            color:#ccc
+    .item-img-w
+        overflow:hidden
+        height : 0
+        padding-bottom:37.09%
+        .item-img
+            height 100%
+.main
+    padding .1rem
+    .one
+        line-height :.54rem
+        font-size:.32rem
+    .two
+        line-height :.4rem
+        color:#ccc
 </style>
